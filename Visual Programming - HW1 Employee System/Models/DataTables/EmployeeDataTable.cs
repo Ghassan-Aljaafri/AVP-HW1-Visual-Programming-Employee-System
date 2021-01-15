@@ -21,42 +21,42 @@ namespace Visual_Programming___HW1_Employee_System.Models.DataTables
             SsnColumn = new DataColumn
             {
                 DataType = System.Type.GetType("System.String"),
-                ColumnName = "ssn",
+                ColumnName = "SSN",
                 ReadOnly = true
             };
 
             FirstNameColumn = new DataColumn
             {
                 DataType = System.Type.GetType("System.String"),
-                ColumnName = "firstName",
+                ColumnName = "First Name",
                 ReadOnly = true
             };
 
             LastNameColumn = new DataColumn
             {
                 DataType = System.Type.GetType("System.String"),
-                ColumnName = "lastName",
+                ColumnName = "Last Name",
                 ReadOnly = true
             };
 
             BirthDateColumn = new DataColumn
             {
                 DataType = System.Type.GetType("System.String"),
-                ColumnName = "birthDate",
+                ColumnName = "Birth Date",
                 ReadOnly = true
             };
 
             DepartmentColumn = new DataColumn
             {
                 DataType = System.Type.GetType("System.String"),
-                ColumnName = "department",
+                ColumnName = "Department",
                 ReadOnly = true
             };
 
             AddressColumn = new DataColumn
             {
                 DataType = System.Type.GetType("System.String"),
-                ColumnName = "address",
+                ColumnName = "Address",
                 ReadOnly = true
             };
 
@@ -71,12 +71,12 @@ namespace Visual_Programming___HW1_Employee_System.Models.DataTables
         public void AddEmployee(Employee employee)
         {
             DataRow row = this.NewRow();
-            row["ssn"] = employee.Ssn;
-            row["firstName"] = employee.FirstName;
-            row["lastName"] = employee.LastName;
-            row["birthDate"] = employee.BirthDate;
-            row["address"] = employee.Address;
-            row["department"] = employee.Department;
+            row["SSN"] = employee.Ssn;
+            row["First Name"] = employee.FirstName;
+            row["Last Name"] = employee.LastName;
+            row["Birth Date"] = employee.BirthDate;
+            row["Address"] = employee.Address;
+            row["Department"] = employee.Department;
             this.Rows.Add(row);
         }
     }
