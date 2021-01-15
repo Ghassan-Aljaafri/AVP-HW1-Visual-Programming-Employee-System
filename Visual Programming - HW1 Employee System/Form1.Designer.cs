@@ -37,8 +37,8 @@ namespace Visual_Programming___HW1_Employee_System
             this.labelLastName = new System.Windows.Forms.Label();
             this.textBoxAddress = new System.Windows.Forms.TextBox();
             this.labelAddress = new System.Windows.Forms.Label();
-            this.dateTimePickerBirthDay = new System.Windows.Forms.DateTimePicker();
-            this.labelBirthDay = new System.Windows.Forms.Label();
+            this.dateTimePickerBirthDate = new System.Windows.Forms.DateTimePicker();
+            this.labelBirthDate = new System.Windows.Forms.Label();
             this.buttonAddEmployee = new System.Windows.Forms.Button();
             this.labelDepartment = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -63,7 +63,6 @@ namespace Visual_Programming___HW1_Employee_System
             this.labelFirstName.Size = new System.Drawing.Size(57, 13);
             this.labelFirstName.TabIndex = 1;
             this.labelFirstName.Text = "First Name";
-            this.labelFirstName.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelSsn
             // 
@@ -87,7 +86,6 @@ namespace Visual_Programming___HW1_Employee_System
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(200, 20);
             this.textBoxLastName.TabIndex = 5;
-            this.textBoxLastName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // labelLastName
             // 
@@ -114,21 +112,21 @@ namespace Visual_Programming___HW1_Employee_System
             this.labelAddress.TabIndex = 6;
             this.labelAddress.Text = "Address";
             // 
-            // dateTimePickerBirthDay
+            // dateTimePickerBirthDate
             // 
-            this.dateTimePickerBirthDay.Location = new System.Drawing.Point(12, 194);
-            this.dateTimePickerBirthDay.Name = "dateTimePickerBirthDay";
-            this.dateTimePickerBirthDay.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerBirthDay.TabIndex = 8;
+            this.dateTimePickerBirthDate.Location = new System.Drawing.Point(12, 194);
+            this.dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
+            this.dateTimePickerBirthDate.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerBirthDate.TabIndex = 8;
             // 
-            // labelBirthDay
+            // labelBirthDate
             // 
-            this.labelBirthDay.AutoSize = true;
-            this.labelBirthDay.Location = new System.Drawing.Point(12, 178);
-            this.labelBirthDay.Name = "labelBirthDay";
-            this.labelBirthDay.Size = new System.Drawing.Size(47, 13);
-            this.labelBirthDay.TabIndex = 9;
-            this.labelBirthDay.Text = "BirthDay";
+            this.labelBirthDate.AutoSize = true;
+            this.labelBirthDate.Location = new System.Drawing.Point(12, 178);
+            this.labelBirthDate.Name = "labelBirthDate";
+            this.labelBirthDate.Size = new System.Drawing.Size(51, 13);
+            this.labelBirthDate.TabIndex = 9;
+            this.labelBirthDate.Text = "BirthDate";
             // 
             // buttonAddEmployee
             // 
@@ -191,8 +189,8 @@ namespace Visual_Programming___HW1_Employee_System
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.labelDepartment);
             this.Controls.Add(this.buttonAddEmployee);
-            this.Controls.Add(this.labelBirthDay);
-            this.Controls.Add(this.dateTimePickerBirthDay);
+            this.Controls.Add(this.labelBirthDate);
+            this.Controls.Add(this.dateTimePickerBirthDate);
             this.Controls.Add(this.textBoxAddress);
             this.Controls.Add(this.labelAddress);
             this.Controls.Add(this.textBoxLastName);
@@ -219,8 +217,8 @@ namespace Visual_Programming___HW1_Employee_System
         private System.Windows.Forms.Label labelLastName;
         private System.Windows.Forms.TextBox textBoxAddress;
         private System.Windows.Forms.Label labelAddress;
-        private System.Windows.Forms.DateTimePicker dateTimePickerBirthDay;
-        private System.Windows.Forms.Label labelBirthDay;
+        private System.Windows.Forms.DateTimePicker dateTimePickerBirthDate;
+        private System.Windows.Forms.Label labelBirthDate;
         private System.Windows.Forms.Button buttonAddEmployee;
         private System.Windows.Forms.Label labelDepartment;
         private System.Windows.Forms.ComboBox comboBox1;

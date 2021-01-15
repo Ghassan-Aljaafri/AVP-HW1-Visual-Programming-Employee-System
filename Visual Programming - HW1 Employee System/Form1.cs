@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Visual_Programming___HW1_Employee_System.Models.DataTables;
 
 namespace Visual_Programming___HW1_Employee_System
 {
@@ -15,16 +16,6 @@ namespace Visual_Programming___HW1_Employee_System
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
