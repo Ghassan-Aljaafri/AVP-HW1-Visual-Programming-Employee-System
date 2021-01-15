@@ -9,57 +9,45 @@ namespace Visual_Programming___HW1_Employee_System.Models.DataTables
 {
     class EmployeeDataTable : DataTable
     {
-        DataColumn SsnColumn;
-        DataColumn FirstNameColumn;
-        DataColumn LastNameColumn;
-        DataColumn BirthDateColumn;
-        DataColumn AddressColumn;
-        DataColumn DepartmentColumn;
+        readonly DataColumn SsnColumn = new DataColumn
+        {
+            DataType = System.Type.GetType("System.String"),
+            ColumnName = "SSN",
+            ReadOnly = true
+        };
+        readonly DataColumn FirstNameColumn = new DataColumn
+        {
+            DataType = System.Type.GetType("System.String"),
+            ColumnName = "First Name",
+            ReadOnly = true
+        };
+        readonly DataColumn LastNameColumn = new DataColumn
+        {
+            DataType = System.Type.GetType("System.String"),
+            ColumnName = "Last Name",
+            ReadOnly = true
+        };
+        readonly DataColumn BirthDateColumn = new DataColumn
+        {
+            DataType = System.Type.GetType("System.String"),
+            ColumnName = "Birth Date",
+            ReadOnly = true
+        };
+        readonly DataColumn DepartmentColumn = new DataColumn
+        {
+            DataType = System.Type.GetType("System.String"),
+            ColumnName = "Department",
+            ReadOnly = true
+        };
+        readonly DataColumn AddressColumn = new DataColumn
+        {
+            DataType = System.Type.GetType("System.String"),
+            ColumnName = "Address",
+            ReadOnly = true
+        };
 
         public EmployeeDataTable()
         {
-            SsnColumn = new DataColumn
-            {
-                DataType = System.Type.GetType("System.String"),
-                ColumnName = "SSN",
-                ReadOnly = true
-            };
-
-            FirstNameColumn = new DataColumn
-            {
-                DataType = System.Type.GetType("System.String"),
-                ColumnName = "First Name",
-                ReadOnly = true
-            };
-
-            LastNameColumn = new DataColumn
-            {
-                DataType = System.Type.GetType("System.String"),
-                ColumnName = "Last Name",
-                ReadOnly = true
-            };
-
-            BirthDateColumn = new DataColumn
-            {
-                DataType = System.Type.GetType("System.String"),
-                ColumnName = "Birth Date",
-                ReadOnly = true
-            };
-
-            DepartmentColumn = new DataColumn
-            {
-                DataType = System.Type.GetType("System.String"),
-                ColumnName = "Department",
-                ReadOnly = true
-            };
-
-            AddressColumn = new DataColumn
-            {
-                DataType = System.Type.GetType("System.String"),
-                ColumnName = "Address",
-                ReadOnly = true
-            };
-
             this.Columns.Add(SsnColumn);
             this.Columns.Add(FirstNameColumn);
             this.Columns.Add(LastNameColumn);
