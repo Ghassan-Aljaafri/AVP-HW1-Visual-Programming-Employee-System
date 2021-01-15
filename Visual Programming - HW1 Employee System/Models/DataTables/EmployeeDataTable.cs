@@ -22,48 +22,42 @@ namespace Visual_Programming___HW1_Employee_System.Models.DataTables
             {
                 DataType = System.Type.GetType("System.String"),
                 ColumnName = "ssn",
-                ReadOnly = true,
-                Unique = true
+                ReadOnly = true
             };
 
             FirstNameColumn = new DataColumn
             {
                 DataType = System.Type.GetType("System.String"),
                 ColumnName = "firstName",
-                ReadOnly = true,
-                Unique = true
+                ReadOnly = true
             };
 
             LastNameColumn = new DataColumn
             {
                 DataType = System.Type.GetType("System.String"),
                 ColumnName = "lastName",
-                ReadOnly = true,
-                Unique = true
+                ReadOnly = true
             };
 
             BirthDateColumn = new DataColumn
             {
                 DataType = System.Type.GetType("System.String"),
                 ColumnName = "birthDate",
-                ReadOnly = true,
-                Unique = true
+                ReadOnly = true
             };
 
             DepartmentColumn = new DataColumn
             {
                 DataType = System.Type.GetType("System.String"),
                 ColumnName = "department",
-                ReadOnly = true,
-                Unique = true
+                ReadOnly = true
             };
 
             AddressColumn = new DataColumn
             {
                 DataType = System.Type.GetType("System.String"),
                 ColumnName = "address",
-                ReadOnly = true,
-                Unique = true
+                ReadOnly = true
             };
 
             this.Columns.Add(SsnColumn);
