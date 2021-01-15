@@ -41,7 +41,7 @@ namespace Visual_Programming___HW1_Employee_System
             this.labelBirthDate = new System.Windows.Forms.Label();
             this.buttonAddEmployee = new System.Windows.Forms.Button();
             this.labelDepartment = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxDepartment = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.buttonSearch = new System.Windows.Forms.Button();
@@ -50,143 +50,160 @@ namespace Visual_Programming___HW1_Employee_System
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(12, 29);
+            this.textBoxFirstName.Location = new System.Drawing.Point(18, 42);
+            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(200, 20);
+            this.textBoxFirstName.Size = new System.Drawing.Size(298, 27);
             this.textBoxFirstName.TabIndex = 0;
             // 
             // labelFirstName
             // 
             this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Location = new System.Drawing.Point(13, 13);
+            this.labelFirstName.Location = new System.Drawing.Point(20, 19);
+            this.labelFirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFirstName.Name = "labelFirstName";
-            this.labelFirstName.Size = new System.Drawing.Size(57, 13);
+            this.labelFirstName.Size = new System.Drawing.Size(85, 19);
             this.labelFirstName.TabIndex = 1;
             this.labelFirstName.Text = "First Name";
             // 
             // labelSsn
             // 
             this.labelSsn.AutoSize = true;
-            this.labelSsn.Location = new System.Drawing.Point(12, 95);
+            this.labelSsn.Location = new System.Drawing.Point(18, 139);
+            this.labelSsn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSsn.Name = "labelSsn";
-            this.labelSsn.Size = new System.Drawing.Size(29, 13);
+            this.labelSsn.Size = new System.Drawing.Size(38, 19);
             this.labelSsn.TabIndex = 2;
             this.labelSsn.Text = "SSN";
             // 
             // textBoxSsn
             // 
-            this.textBoxSsn.Location = new System.Drawing.Point(12, 112);
+            this.textBoxSsn.Location = new System.Drawing.Point(18, 164);
+            this.textBoxSsn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxSsn.Name = "textBoxSsn";
-            this.textBoxSsn.Size = new System.Drawing.Size(200, 20);
+            this.textBoxSsn.Size = new System.Drawing.Size(298, 27);
             this.textBoxSsn.TabIndex = 3;
             // 
             // textBoxLastName
             // 
-            this.textBoxLastName.Location = new System.Drawing.Point(12, 72);
+            this.textBoxLastName.Location = new System.Drawing.Point(18, 105);
+            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(200, 20);
+            this.textBoxLastName.Size = new System.Drawing.Size(298, 27);
             this.textBoxLastName.TabIndex = 5;
             // 
             // labelLastName
             // 
             this.labelLastName.AutoSize = true;
-            this.labelLastName.Location = new System.Drawing.Point(13, 56);
+            this.labelLastName.Location = new System.Drawing.Point(20, 82);
+            this.labelLastName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLastName.Name = "labelLastName";
-            this.labelLastName.Size = new System.Drawing.Size(58, 13);
+            this.labelLastName.Size = new System.Drawing.Size(83, 19);
             this.labelLastName.TabIndex = 4;
             this.labelLastName.Text = "Last Name";
             // 
             // textBoxAddress
             // 
-            this.textBoxAddress.Location = new System.Drawing.Point(12, 151);
+            this.textBoxAddress.Location = new System.Drawing.Point(18, 221);
+            this.textBoxAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(200, 20);
+            this.textBoxAddress.Size = new System.Drawing.Size(298, 27);
             this.textBoxAddress.TabIndex = 7;
             // 
             // labelAddress
             // 
             this.labelAddress.AutoSize = true;
-            this.labelAddress.Location = new System.Drawing.Point(13, 135);
+            this.labelAddress.Location = new System.Drawing.Point(20, 197);
+            this.labelAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(45, 13);
+            this.labelAddress.Size = new System.Drawing.Size(66, 19);
             this.labelAddress.TabIndex = 6;
             this.labelAddress.Text = "Address";
             // 
             // dateTimePickerBirthDate
             // 
-            this.dateTimePickerBirthDate.Location = new System.Drawing.Point(12, 194);
+            this.dateTimePickerBirthDate.Location = new System.Drawing.Point(18, 284);
+            this.dateTimePickerBirthDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
-            this.dateTimePickerBirthDate.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerBirthDate.Size = new System.Drawing.Size(298, 27);
             this.dateTimePickerBirthDate.TabIndex = 8;
             // 
             // labelBirthDate
             // 
             this.labelBirthDate.AutoSize = true;
-            this.labelBirthDate.Location = new System.Drawing.Point(12, 178);
+            this.labelBirthDate.Location = new System.Drawing.Point(18, 260);
+            this.labelBirthDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBirthDate.Name = "labelBirthDate";
-            this.labelBirthDate.Size = new System.Drawing.Size(51, 13);
+            this.labelBirthDate.Size = new System.Drawing.Size(74, 19);
             this.labelBirthDate.TabIndex = 9;
             this.labelBirthDate.Text = "BirthDate";
             // 
             // buttonAddEmployee
             // 
-            this.buttonAddEmployee.Location = new System.Drawing.Point(12, 264);
+            this.buttonAddEmployee.Location = new System.Drawing.Point(18, 386);
+            this.buttonAddEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAddEmployee.Name = "buttonAddEmployee";
-            this.buttonAddEmployee.Size = new System.Drawing.Size(200, 23);
+            this.buttonAddEmployee.Size = new System.Drawing.Size(300, 34);
             this.buttonAddEmployee.TabIndex = 10;
             this.buttonAddEmployee.Text = "Add Employee";
             this.buttonAddEmployee.UseVisualStyleBackColor = true;
+            this.buttonAddEmployee.Click += new System.EventHandler(this.buttonAddEmployee_Click);
             // 
             // labelDepartment
             // 
             this.labelDepartment.AutoSize = true;
-            this.labelDepartment.Location = new System.Drawing.Point(12, 221);
+            this.labelDepartment.Location = new System.Drawing.Point(18, 323);
+            this.labelDepartment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDepartment.Name = "labelDepartment";
-            this.labelDepartment.Size = new System.Drawing.Size(62, 13);
+            this.labelDepartment.Size = new System.Drawing.Size(92, 19);
             this.labelDepartment.TabIndex = 11;
             this.labelDepartment.Text = "Department";
             // 
-            // comboBox1
+            // comboBoxDepartment
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 237);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 12;
+            this.comboBoxDepartment.FormattingEnabled = true;
+            this.comboBoxDepartment.Location = new System.Drawing.Point(18, 346);
+            this.comboBoxDepartment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxDepartment.Name = "comboBoxDepartment";
+            this.comboBoxDepartment.Size = new System.Drawing.Size(298, 27);
+            this.comboBoxDepartment.TabIndex = 12;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(219, 56);
+            this.dataGridView1.Location = new System.Drawing.Point(328, 82);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(569, 231);
+            this.dataGridView1.Size = new System.Drawing.Size(854, 338);
             this.dataGridView1.TabIndex = 13;
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.Location = new System.Drawing.Point(219, 29);
+            this.textBoxSearch.Location = new System.Drawing.Point(328, 42);
+            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(488, 20);
+            this.textBoxSearch.Size = new System.Drawing.Size(730, 27);
             this.textBoxSearch.TabIndex = 14;
             // 
             // buttonSearch
             // 
-            this.buttonSearch.Location = new System.Drawing.Point(713, 26);
+            this.buttonSearch.Location = new System.Drawing.Point(1070, 38);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(75, 23);
+            this.buttonSearch.Size = new System.Drawing.Size(112, 34);
             this.buttonSearch.TabIndex = 15;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 296);
+            this.ClientSize = new System.Drawing.Size(1200, 433);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxDepartment);
             this.Controls.Add(this.labelDepartment);
             this.Controls.Add(this.buttonAddEmployee);
             this.Controls.Add(this.labelBirthDate);
@@ -199,6 +216,7 @@ namespace Visual_Programming___HW1_Employee_System
             this.Controls.Add(this.labelSsn);
             this.Controls.Add(this.labelFirstName);
             this.Controls.Add(this.textBoxFirstName);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -221,7 +239,7 @@ namespace Visual_Programming___HW1_Employee_System
         private System.Windows.Forms.Label labelBirthDate;
         private System.Windows.Forms.Button buttonAddEmployee;
         private System.Windows.Forms.Label labelDepartment;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxDepartment;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Button buttonSearch;
