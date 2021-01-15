@@ -27,6 +27,18 @@ namespace Visual_Programming___HW1_Employee_System
         {
             Employee employee = new Employee(textBoxSsn.Text, textBoxFirstName.Text, textBoxLastName.Text, dateTimePickerBirthDate.Text, textBoxAddress.Text, comboBoxDepartment.Text);
             this.emplyeeDataTable.AddEmployee(employee);
+            clearFields();
+        }
+
+        public void clearFields()
+        {
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl.GetType() == typeof(TextBox))
+                {
+                    ctrl.Text = "";
+                }
+            }
         }
     }
 }
