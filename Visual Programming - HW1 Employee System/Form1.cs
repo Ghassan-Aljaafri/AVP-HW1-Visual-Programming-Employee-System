@@ -15,12 +15,12 @@ namespace Visual_Programming___HW1_Employee_System
 {
     public partial class Form1 : Form
     {
-        EmployeeDataTable emplyeeDataTable;
+        EmployeeDataTable emplyeeDataTable = new EmployeeDataTable();
 
         public Form1()
         {
             InitializeComponent();
-            emplyeeDataTable = new EmployeeDataTable();
+            dataGridViewEmployee.DataSource = this.emplyeeDataTable;
         }
 
         private void buttonAddEmployee_Click(object sender, EventArgs e)

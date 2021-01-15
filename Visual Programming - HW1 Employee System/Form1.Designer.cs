@@ -42,10 +42,10 @@ namespace Visual_Programming___HW1_Employee_System
             this.buttonAddEmployee = new System.Windows.Forms.Button();
             this.labelDepartment = new System.Windows.Forms.Label();
             this.comboBoxDepartment = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewEmployee = new System.Windows.Forms.DataGridView();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.buttonSearch = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxFirstName
@@ -168,14 +168,14 @@ namespace Visual_Programming___HW1_Employee_System
             this.comboBoxDepartment.Size = new System.Drawing.Size(298, 27);
             this.comboBoxDepartment.TabIndex = 12;
             // 
-            // dataGridView1
+            // dataGridViewEmployee
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(328, 82);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(854, 338);
-            this.dataGridView1.TabIndex = 13;
+            this.dataGridViewEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEmployee.Location = new System.Drawing.Point(328, 82);
+            this.dataGridViewEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewEmployee.Name = "dataGridViewEmployee";
+            this.dataGridViewEmployee.Size = new System.Drawing.Size(854, 338);
+            this.dataGridViewEmployee.TabIndex = 13;
             // 
             // textBoxSearch
             // 
@@ -199,10 +199,12 @@ namespace Visual_Programming___HW1_Employee_System
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1200, 433);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.textBoxSearch);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewEmployee);
             this.Controls.Add(this.comboBoxDepartment);
             this.Controls.Add(this.labelDepartment);
             this.Controls.Add(this.buttonAddEmployee);
@@ -219,7 +221,7 @@ namespace Visual_Programming___HW1_Employee_System
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,7 +242,7 @@ namespace Visual_Programming___HW1_Employee_System
         private System.Windows.Forms.Button buttonAddEmployee;
         private System.Windows.Forms.Label labelDepartment;
         private System.Windows.Forms.ComboBox comboBoxDepartment;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewEmployee;
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Button buttonSearch;
     }
