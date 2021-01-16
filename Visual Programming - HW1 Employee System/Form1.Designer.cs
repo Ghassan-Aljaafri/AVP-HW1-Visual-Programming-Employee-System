@@ -80,14 +80,14 @@ namespace Visual_Programming___HW1_Employee_System
             this.textBoxSsn.Location = new System.Drawing.Point(12, 112);
             this.textBoxSsn.Name = "textBoxSsn";
             this.textBoxSsn.Size = new System.Drawing.Size(200, 20);
-            this.textBoxSsn.TabIndex = 3;
+            this.textBoxSsn.TabIndex = 2;
             // 
             // textBoxLastName
             // 
             this.textBoxLastName.Location = new System.Drawing.Point(12, 72);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(200, 20);
-            this.textBoxLastName.TabIndex = 5;
+            this.textBoxLastName.TabIndex = 1;
             // 
             // labelLastName
             // 
@@ -103,7 +103,7 @@ namespace Visual_Programming___HW1_Employee_System
             this.textBoxAddress.Location = new System.Drawing.Point(12, 151);
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(200, 20);
-            this.textBoxAddress.TabIndex = 7;
+            this.textBoxAddress.TabIndex = 3;
             // 
             // labelAddress
             // 
@@ -119,7 +119,7 @@ namespace Visual_Programming___HW1_Employee_System
             this.dateTimePickerBirthDate.Location = new System.Drawing.Point(12, 194);
             this.dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
             this.dateTimePickerBirthDate.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerBirthDate.TabIndex = 8;
+            this.dateTimePickerBirthDate.TabIndex = 4;
             // 
             // labelBirthDate
             // 
@@ -135,7 +135,7 @@ namespace Visual_Programming___HW1_Employee_System
             this.buttonAddEmployee.Location = new System.Drawing.Point(12, 264);
             this.buttonAddEmployee.Name = "buttonAddEmployee";
             this.buttonAddEmployee.Size = new System.Drawing.Size(200, 23);
-            this.buttonAddEmployee.TabIndex = 10;
+            this.buttonAddEmployee.TabIndex = 6;
             this.buttonAddEmployee.Text = "Add Employee";
             this.buttonAddEmployee.UseVisualStyleBackColor = true;
             this.buttonAddEmployee.Click += new System.EventHandler(this.buttonAddEmployee_Click);
@@ -152,10 +152,15 @@ namespace Visual_Programming___HW1_Employee_System
             // comboBoxDepartment
             // 
             this.comboBoxDepartment.FormattingEnabled = true;
+            this.comboBoxDepartment.Items.AddRange(new object[] {
+            "HR",
+            "Marketing",
+            "Sales",
+            "Research & Development"});
             this.comboBoxDepartment.Location = new System.Drawing.Point(12, 237);
             this.comboBoxDepartment.Name = "comboBoxDepartment";
             this.comboBoxDepartment.Size = new System.Drawing.Size(200, 21);
-            this.comboBoxDepartment.TabIndex = 12;
+            this.comboBoxDepartment.TabIndex = 5;
             // 
             // dataGridViewEmployee
             // 
@@ -164,26 +169,27 @@ namespace Visual_Programming___HW1_Employee_System
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEmployee.Location = new System.Drawing.Point(219, 56);
+            this.dataGridViewEmployee.Location = new System.Drawing.Point(218, 56);
             this.dataGridViewEmployee.Name = "dataGridViewEmployee";
-            this.dataGridViewEmployee.Size = new System.Drawing.Size(805, 231);
+            this.dataGridViewEmployee.Size = new System.Drawing.Size(793, 231);
             this.dataGridViewEmployee.TabIndex = 13;
             // 
             // textBoxSearch
             // 
             this.textBoxSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSearch.Location = new System.Drawing.Point(300, 29);
+            this.textBoxSearch.Location = new System.Drawing.Point(312, 29);
+            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(516, 20);
+            this.textBoxSearch.Size = new System.Drawing.Size(508, 20);
             this.textBoxSearch.TabIndex = 14;
             // 
             // buttonSearch
             // 
             this.buttonSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSearch.Location = new System.Drawing.Point(949, 27);
+            this.buttonSearch.Location = new System.Drawing.Point(920, 27);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(75, 23);
+            this.buttonSearch.Size = new System.Drawing.Size(91, 23);
             this.buttonSearch.TabIndex = 15;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = true;
@@ -191,9 +197,10 @@ namespace Visual_Programming___HW1_Employee_System
             // 
             // buttonReset
             // 
-            this.buttonReset.Location = new System.Drawing.Point(219, 28);
+            this.buttonReset.Location = new System.Drawing.Point(217, 28);
+            this.buttonReset.Margin = new System.Windows.Forms.Padding(2);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(75, 23);
+            this.buttonReset.Size = new System.Drawing.Size(91, 23);
             this.buttonReset.TabIndex = 16;
             this.buttonReset.Text = "Reset";
             this.buttonReset.UseVisualStyleBackColor = true;
@@ -211,9 +218,10 @@ namespace Visual_Programming___HW1_Employee_System
             "Address",
             "BirthDate",
             "Department"});
-            this.comboBoxSearchColumn.Location = new System.Drawing.Point(822, 28);
+            this.comboBoxSearchColumn.Location = new System.Drawing.Point(824, 28);
+            this.comboBoxSearchColumn.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxSearchColumn.Name = "comboBoxSearchColumn";
-            this.comboBoxSearchColumn.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxSearchColumn.Size = new System.Drawing.Size(91, 21);
             this.comboBoxSearchColumn.TabIndex = 17;
             // 
             // Form1
@@ -222,7 +230,7 @@ namespace Visual_Programming___HW1_Employee_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1036, 301);
+            this.ClientSize = new System.Drawing.Size(1023, 309);
             this.Controls.Add(this.comboBoxSearchColumn);
             this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.buttonSearch);
