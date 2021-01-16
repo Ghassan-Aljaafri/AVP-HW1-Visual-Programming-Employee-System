@@ -16,11 +16,13 @@ namespace Visual_Programming___HW1_Employee_System
     public partial class Form1 : Form
     {
         EmployeeDataTable emplyeeDataTable = new EmployeeDataTable();
+        DataView dataView;
 
         public Form1()
         {
             InitializeComponent();
-            dataGridViewEmployee.DataSource = this.emplyeeDataTable;
+            dataView = new DataView(this.emplyeeDataTable);
+            dataGridViewEmployee.DataSource = this.dataView;
         }
 
         private void buttonAddEmployee_Click(object sender, EventArgs e)
@@ -39,6 +41,19 @@ namespace Visual_Programming___HW1_Employee_System
                     ctrl.Text = "";
                 }
             }
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            string searchColumn = comboBoxSearchColumn.Text == String.Empty ? "SSN" : comboBoxSearchColumn.Text;
+            string searchString = textBoxSearch.Text;
+            dataView.RowFilter = $"{searchColumn} LIKE '%{searchString}%'";
+        }
+
+        private void buttonReset_Click(object sender, EventArgs e)
+        {
+            dataView.RowFilter = String.Empty;
+            textBoxSearch.Clear();
         }
     }
 }

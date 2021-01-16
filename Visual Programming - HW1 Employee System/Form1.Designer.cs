@@ -45,6 +45,8 @@ namespace Visual_Programming___HW1_Employee_System
             this.dataGridViewEmployee = new System.Windows.Forms.DataGridView();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.buttonSearch = new System.Windows.Forms.Button();
+            this.buttonReset = new System.Windows.Forms.Button();
+            this.comboBoxSearchColumn = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployee)).BeginInit();
             this.SuspendLayout();
             // 
@@ -171,9 +173,9 @@ namespace Visual_Programming___HW1_Employee_System
             // 
             this.textBoxSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSearch.Location = new System.Drawing.Point(219, 29);
+            this.textBoxSearch.Location = new System.Drawing.Point(300, 29);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(724, 20);
+            this.textBoxSearch.Size = new System.Drawing.Size(516, 20);
             this.textBoxSearch.TabIndex = 14;
             // 
             // buttonSearch
@@ -185,6 +187,34 @@ namespace Visual_Programming___HW1_Employee_System
             this.buttonSearch.TabIndex = 15;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+            // 
+            // buttonReset
+            // 
+            this.buttonReset.Location = new System.Drawing.Point(219, 28);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(75, 23);
+            this.buttonReset.TabIndex = 16;
+            this.buttonReset.Text = "Reset";
+            this.buttonReset.UseVisualStyleBackColor = true;
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
+            // 
+            // comboBoxSearchColumn
+            // 
+            this.comboBoxSearchColumn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxSearchColumn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSearchColumn.FormattingEnabled = true;
+            this.comboBoxSearchColumn.Items.AddRange(new object[] {
+            "SSN",
+            "FirstName",
+            "LastName",
+            "Address",
+            "BirthDate",
+            "Department"});
+            this.comboBoxSearchColumn.Location = new System.Drawing.Point(822, 28);
+            this.comboBoxSearchColumn.Name = "comboBoxSearchColumn";
+            this.comboBoxSearchColumn.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxSearchColumn.TabIndex = 17;
             // 
             // Form1
             // 
@@ -193,6 +223,8 @@ namespace Visual_Programming___HW1_Employee_System
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1036, 301);
+            this.Controls.Add(this.comboBoxSearchColumn);
+            this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.dataGridViewEmployee);
@@ -235,6 +267,8 @@ namespace Visual_Programming___HW1_Employee_System
         private System.Windows.Forms.DataGridView dataGridViewEmployee;
         private System.Windows.Forms.TextBox textBoxSearch;
         private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.Button buttonReset;
+        private System.Windows.Forms.ComboBox comboBoxSearchColumn;
     }
 }
 

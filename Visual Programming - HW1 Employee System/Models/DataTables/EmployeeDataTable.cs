@@ -18,19 +18,19 @@ namespace Visual_Programming___HW1_Employee_System.Models.DataTables
         readonly DataColumn FirstNameColumn = new DataColumn
         {
             DataType = System.Type.GetType("System.String"),
-            ColumnName = "First Name",
+            ColumnName = "FirstName",
             ReadOnly = true
         };
         readonly DataColumn LastNameColumn = new DataColumn
         {
             DataType = System.Type.GetType("System.String"),
-            ColumnName = "Last Name",
+            ColumnName = "LastName",
             ReadOnly = true
         };
         readonly DataColumn BirthDateColumn = new DataColumn
         {
             DataType = System.Type.GetType("System.String"),
-            ColumnName = "Birth Date",
+            ColumnName = "BirthDate",
             ReadOnly = true
         };
         readonly DataColumn DepartmentColumn = new DataColumn
@@ -60,9 +60,9 @@ namespace Visual_Programming___HW1_Employee_System.Models.DataTables
         {
             DataRow row = this.NewRow();
             row["SSN"] = employee.Ssn;
-            row["First Name"] = employee.FirstName;
-            row["Last Name"] = employee.LastName;
-            row["Birth Date"] = employee.BirthDate;
+            row["FirstName"] = employee.FirstName;
+            row["LastName"] = employee.LastName;
+            row["BirthDate"] = employee.BirthDate;
             row["Address"] = employee.Address;
             row["Department"] = employee.Department;
             this.Rows.Add(row);
