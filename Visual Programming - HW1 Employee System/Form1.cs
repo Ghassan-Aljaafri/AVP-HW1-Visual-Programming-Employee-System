@@ -55,5 +55,18 @@ namespace Visual_Programming___HW1_Employee_System
             dataView.RowFilter = String.Empty;
             textBoxSearch.Clear();
         }
+
+        private void dataGridViewEmployee_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > -1)
+            {
+                textBoxSsn.Text = dataGridViewEmployee.Rows[e.RowIndex].Cells["SSN"].Value.ToString();
+                textBoxFirstName.Text = dataGridViewEmployee.Rows[e.RowIndex].Cells["FirstName"].Value.ToString();
+                textBoxLastName.Text = dataGridViewEmployee.Rows[e.RowIndex].Cells["LastName"].Value.ToString();
+                dateTimePickerBirthDate.Text = dataGridViewEmployee.Rows[e.RowIndex].Cells["BirthDate"].Value.ToString();
+                textBoxAddress.Text = dataGridViewEmployee.Rows[e.RowIndex].Cells["Address"].Value.ToString();
+                comboBoxDepartment.Text = dataGridViewEmployee.Rows[e.RowIndex].Cells["Department"].Value.ToString();
+            }
+        }
     }
 }
